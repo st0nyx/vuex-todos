@@ -2,6 +2,8 @@
   <div id="app">
 
     <h3>Todos</h3>
+    <h5>Completed: {{ computedTodos }}</h5>
+    <h5>Pending: {{ pendingTodos }}</h5>
     <todos-list />
     <todo-form />
   </div>
@@ -16,6 +18,16 @@ export default {
   components: {
     TodosList,
     TodoForm
+  },
+
+  computed: {
+    computedTodos() {
+      return this.$store.getters.completedTodos
+    },
+    pendingTodos() {
+      return this.$store.getters.pendingTodos
+    }
+
   }
 }
 </script>
