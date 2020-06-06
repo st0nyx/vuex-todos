@@ -1,7 +1,11 @@
 <template>
-  <div>
+  <div style="width: 250px; margin: 5px auto">
+    <div style="display: flex; justify-content: space-between">
+
     {{ todo.title }}
     <button @click="deleteTodo">Delete</button>
+    </div>
+
   </div>
 </template>
 
