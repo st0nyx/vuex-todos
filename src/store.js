@@ -5,7 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    todos: [
+      {
+        title: "todo item a",
+        completed: false
+      },
+      {
+        title: "todo item b",
+        completed: false
+      },
+    ]
   },
 
   getters: {
