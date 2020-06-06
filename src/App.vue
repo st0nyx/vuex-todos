@@ -3,16 +3,19 @@
 
     <h3>Todos</h3>
     <todos-list />
+    <todo-form />
   </div>
 </template>
 
 <script>
 import TodosList from './components/TodosList'
+import TodoForm from "@/components/TodoForm";
 
 export default {
   name: 'App',
   components: {
-    TodosList
+    TodosList,
+    TodoForm
   }
 }
 </script>
