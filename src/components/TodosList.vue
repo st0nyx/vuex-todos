@@ -1,10 +1,15 @@
 <template>
-  <div>Todos List</div>
+  <div>
+    <todo/>
+  </div>
 </template>
 
 <script>
+import Todo from './Todo'
 export default {
-
+  components: {
+    Todo
+  }
 }
 </script>
 
