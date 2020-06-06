@@ -22,10 +22,17 @@ export default new Vuex.Store({
   },
 
   mutations: {
-
+    NEW_TODO(state, todoItem) {
+      state.todos.push({
+        title: todoItem,
+        completed: false
+      })
+    }
   },
 
   actions: {
-
+    addNewTodo({commit}, todoItem) {
+      commit('NEW_TODO', todoItem)
+    }
   }
 })
